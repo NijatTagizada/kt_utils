@@ -1,6 +1,6 @@
 name: kt_utils
-description: A new Flutter package project.
-version: 0.0.1
+description: Some useful extension methods
+version: 0.0.2
 homepage: https://github.com/NijatTagizada/kt_utils
 
 environment:
