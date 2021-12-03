@@ -11,4 +11,10 @@ void main(List<String> args) {
 
   // Double
   print(5.457.roundPrecision(1));
+
+  
+  // List
+  ['A', 'B', 'C', 'D'].forEachIndexed((index, element) {
+    print('Index $index - Element $element');
+  });
 }
