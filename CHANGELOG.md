@@ -1,7 +1,14 @@
 ## 0.0.1
 
-* Init version
+- Initial version
 
 ## 0.0.2
 
-* Change Description
+- Change Description
+
+## 0.1.0
+
+- Added:
+    - `reversed`
+    - `forEachIndexed`
+- Update `README.md`
