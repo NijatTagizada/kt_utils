@@ -11,4 +11,9 @@ extension StringKt on String {
   int toInt() {
     return int.parse(this);
   }
+
+  ///Reverse text
+  String reversed() {
+    return this.split('\n').map((s) => s.split('').reversed.join('')).join();
+  }
 }
