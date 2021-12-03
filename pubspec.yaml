@@ -1,6 +1,7 @@
 name: kt_utils
 description: A new Flutter package project.
 version: 0.0.1
+homepage: https://github.com/NijatTagizada/kt_utils
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
