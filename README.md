@@ -22,6 +22,6 @@ import 'package:kt_utils/kt_utils.dart';
 <br />
 
 ## Double Methods
-`roundPrecision`
+`roundPrecision` - Rounding number to decimal places
 
 Check out example for learn more
