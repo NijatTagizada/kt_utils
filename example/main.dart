@@ -2,9 +2,12 @@ import 'package:kt_utils/kt_utils.dart';
 
 void main(List<String> args) {
   // String
-  var word = 'hello';
+  var word = 'Lorem';
   word = word.toCapitalize();
-  print(word.plus(' World'));
+
+  print(word.plus(' Ipsum'));
+
+  print('Lorem Ipsum'.reversed());
 
   // Double
   print(5.457.roundPrecision(1));
