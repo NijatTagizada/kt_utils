@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Init version
+
+## 0.0.2
+
+* Change Description
