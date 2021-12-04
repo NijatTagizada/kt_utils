@@ -7,4 +7,12 @@ extension ListKt<T> on Iterable<T> {
 
     for (T element in this) action(index++, element);
   }
+
+  int get lastIndex {
+    return this.length - 1;
+  }
+
+  T random() {
+    return this.elementAt(Random().nextInt(this.length));
+  }
 }
