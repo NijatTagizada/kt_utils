@@ -4,7 +4,7 @@
 
 <br />
 
-<img src="https://img.shields.io/github/workflow/status/NijatTagizada/kt_utils/Dart?style=for-the-badge" />
+<img src="https://img.shields.io/github/workflow/status/NijatTagizada/kt_utils/Dart?label=test&style=for-the-badge" />
 
 
 
