@@ -12,6 +12,11 @@ extension StringKt on String {
     return int.parse(this);
   }
 
+  ///Parse to [double]
+  double toDouble() {
+    return double.parse(this);
+  }
+
   ///Reverse text
   String reversed() {
     return this.split('\n').map((s) => s.split('').reversed.join('')).join();

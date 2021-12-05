@@ -19,9 +19,25 @@ import 'package:kt_utils/kt_utils.dart';
 
 `toInt` - Parse to int
 
+`toDouble` - Parse to double
+
+`reversed` - Reverse text
+
 <br />
 
 ## Double Methods
 `roundPrecision` - Rounding number to decimal places
 
-Check out example for learn more
+
+<br />
+
+## List Methods
+`forEachIndexed` - forEach with index
+
+`lastIndex` - Last index of list
+
+`random` - Return random object
+
+<br />
+
+Check out example
