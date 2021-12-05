@@ -19,6 +19,10 @@ import 'package:kt_utils/kt_utils.dart';
 
 `toInt` - Parse to int
 
+`toDouble` - Parse to double
+
+`reversed` - Reverse text
+
 <br />
 
 ## Double Methods
@@ -29,6 +33,10 @@ import 'package:kt_utils/kt_utils.dart';
 
 ## List Methods
 `forEachIndexed` - forEach with index
+
+`lastIndex` - Last index of list
+
+`random` - Return random object
 
 <br />
 

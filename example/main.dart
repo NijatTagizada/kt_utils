@@ -11,6 +11,8 @@ void main(List<String> args) {
   
   print('10'.toInt());
 
+  print('10.3'.toDouble());
+
   // Double
   print(5.457.roundPrecision(1));
 

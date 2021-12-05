@@ -1,8 +1,13 @@
 ## 0.1.0
 
-- Added:
+- Add:
     - `reversed`
+    - `toDouble`
     - `forEachIndexed`
+    - `lastIndex`
+    - `random`
+- Fix:
+    - Fix `roundPrecision` method
 - Update `README.md`
 
 

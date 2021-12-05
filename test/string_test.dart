@@ -23,6 +23,11 @@ void main() {
       expect(() => num.toInt(), throwsA(TypeMatcher<FormatException>()));
     });
 
+    test('To Double', () {
+      String num = '10.22';
+      expect(num.toDouble(), 10.22);
+    });
+
     test('Reversed', () {
       expect(word.reversed(), 'muspi merol');
     });
