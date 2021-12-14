@@ -27,6 +27,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `reversed` - Reverse text
 
+`toTitleCase` - Capitalizes all words
+
 <br />
 
 ## Double Methods

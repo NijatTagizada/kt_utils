@@ -1,3 +1,8 @@
+## 1.0.0
+- Add:
+    - `toTitleCase`
+- Fix:
+    - Error `toCapitalize` method when text is empty
 ## 0.1.6
 
 - Add:

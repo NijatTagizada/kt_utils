@@ -9,8 +9,12 @@ void main() {
       word = 'lorem ipsum';
     });
 
-    test('Capitalize', () {
+    test('toCapitalize', () {
       expect(word.toCapitalize(), 'Lorem ipsum');
+    });
+
+    test('toCapitalize empty string', () {
+      expect(''.toCapitalize(), '');
     });
 
     test('To Int', () {
@@ -32,8 +36,20 @@ void main() {
       expect(word.reversed(), 'muspi merol');
     });
 
+    test('Reversed empty string', () {
+      expect(''.reversed(), '');
+    });
+
     test('Plus', () {
       expect(word.plus(' dolor'), 'lorem ipsum dolor');
+    });
+
+    test('toTitleCase', () {
+      expect(word.toTitleCase(), 'Lorem Ipsum');
+    });
+
+    test('toTitleCase empty string', () {
+      expect(''.toTitleCase(), '');
     });
   });
 }

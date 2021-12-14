@@ -5,7 +5,13 @@ extension StringKt on String {
   String plus(String text) => '${this}$text';
 
   ///Capitalize first letter
-  String toCapitalize() => this.replaceFirst(this[0], this[0].toUpperCase());
+  String toCapitalize() {
+    if (this.trim().length > 0) {
+      return this.replaceFirst(this[0], this[0].toUpperCase());
+    } else {
+      return this;
+    }
+  }
 
   ///Parse to [int]
   int toInt() {
@@ -20,5 +26,10 @@ extension StringKt on String {
   ///Reverse text
   String reversed() {
     return this.split('\n').map((s) => s.split('').reversed.join('')).join();
+  }
+
+  ///Capitalizes all words
+  String toTitleCase() {
+    return this.split(' ').map((s) => s.toCapitalize()).join(' ');
   }
 }

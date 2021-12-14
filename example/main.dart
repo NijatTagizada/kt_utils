@@ -8,10 +8,12 @@ void main(List<String> args) {
   print(word.plus(' Ipsum'));
 
   print('Lorem Ipsum'.reversed());
-  
+
   print('10'.toInt());
 
   print('10.3'.toDouble());
+
+  print('lorem ipsum dolor'.toTitleCase());
 
   // Double
   print(5.457.roundPrecision(1));
