@@ -1,23 +1,25 @@
 ## 1.0.0
 - Add:
-    - `toTitleCase`
+    - `string.toTitleCase`
+    - `string.containsDigit`
+    - `string.isEmailValid`
 - Fix:
-    - Error `toCapitalize` method when text is empty
+    - Error `string.toCapitalize` method when text is empty
 ## 0.1.6
 
 - Add:
-    Workflows
+    - Workflows
 
 ## 0.1.0
 
 - Add:
-    - `reversed`
-    - `toDouble`
-    - `forEachIndexed`
-    - `lastIndex`
-    - `random`
+    - `string.reversed`
+    - `string.toDouble`
+    - `list.forEachIndexed`
+    - `list.lastIndex`
+    - `list.random`
 - Fix:
-    - Fix `roundPrecision` method
+    - Fix `double.roundPrecision` method
 - Update `README.md`
 
 

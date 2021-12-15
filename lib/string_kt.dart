@@ -32,4 +32,14 @@ extension StringKt on String {
   String toTitleCase() {
     return this.split(' ').map((s) => s.toCapitalize()).join(' ');
   }
+
+  ///Check contain digit
+  bool containsDigit() {
+    return RegExp(kHaveDigitPtrn).hasMatch(this);
+  }
+
+  ///Check email is valid
+  bool isEmailValid() {
+    return RegExp(kEmailPtrn).hasMatch(this);
+  }
 }

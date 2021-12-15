@@ -29,6 +29,10 @@ import 'package:kt_utils/kt_utils.dart';
 
 `toTitleCase` - Capitalizes all words
 
+`containsDigit` - Check contains digit
+
+`isEmailValid` - Check email is valid
+
 <br />
 
 ## Double Methods
