@@ -2,16 +2,21 @@ import 'package:kt_utils/kt_utils.dart';
 
 void main(List<String> args) {
   // String
-  var word = 'Lorem';
-  word = word.toCapitalize();
+  print('lorem'.toCapitalize());
 
-  print(word.plus(' Ipsum'));
+  print('Lorem'.plus(' Ipsum'));
 
   print('Lorem Ipsum'.reversed());
-  
+
   print('10'.toInt());
 
   print('10.3'.toDouble());
+
+  print('lorem ipsum dolor'.toTitleCase());
+
+  print('123abc'.containsDigit());
+
+  print('abc@abc.test'.isEmailValid());
 
   // Double
   print(5.457.roundPrecision(1));
