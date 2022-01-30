@@ -1,10 +1,9 @@
 ## kt_utils
 
-<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/github/license/NijatTagizada/yandex-image-scraper?style=for-the-badge"/></a><a href="https://pub.dev/packages/kt_utils"><img src="https://img.shields.io/pub/v/kt_utils?style=for-the-badge" /></a>
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/github/license/NijatTagizada/kt_utils?style=for-the-badge"/></a><a href="https://pub.dev/packages/kt_utils"><img src="https://img.shields.io/pub/v/kt_utils?style=for-the-badge"/></a>
 
-<br />
 
-<img src="https://img.shields.io/github/workflow/status/NijatTagizada/kt_utils/Test?label=test&style=for-the-badge" />
+<a href="https://github.com/NijatTagizada/kt_utils/actions/workflows/test.yml"><img src="https://img.shields.io/github/workflow/status/NijatTagizada/kt_utils/Test?label=test&style=for-the-badge" /></a>
 
 <br />
 
