@@ -32,5 +32,5 @@ void main(List<String> args) {
 
   print(ls.lastIndex);
 
-  print(ls.count((e) => e == 'AV'));
+  print(ls.count((e) => e == 'A'));
 }
