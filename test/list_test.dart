@@ -29,17 +29,5 @@ void main() {
       var ls = [1, 2, 3];
       expect(ls.lastIndex, 2);
     });
-
-    test('list count found', () {
-      var ls = [1, 2, 3, 4, 5, 5, 6, 5];
-      int result = ls.count((e) => e == 5);
-      expect(result, 3);
-    });
-
-    test('list count not found', () {
-      var ls = [0, 1, 2, 3, 4];
-      int result = ls.count((e) => e == 9);
-      expect(result, 0);
-    });
   });
 }
