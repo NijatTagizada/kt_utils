@@ -18,7 +18,7 @@ extension ListKt<T> on Iterable<T> {
     return this.elementAt(Random().nextInt(this.length));
   }
 
-  ///Return number times that any given item appears in a list
+  ///Return count of the given item
   int count(bool Function(T e) func) {
     return this.where((element) => func(element)).length;
   }

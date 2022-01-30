@@ -48,6 +48,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `random` - Return random object
 
+`count` - Return count of the given item
+
 <br />
 
-Check out example
+**Check out example**
