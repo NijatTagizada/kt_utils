@@ -22,7 +22,7 @@ void main(List<String> args) {
   print(5.457.roundPrecision(1));
 
   // List
-  List<String> ls = ['A', 'B', 'C', 'D'];
+  List<String> ls = ['A', 'B', 'C', 'D', 'A', 'D', 'A'];
 
   ls.forEachIndexed((index, element) {
     print('Index $index - Element $element');
@@ -31,4 +31,6 @@ void main(List<String> args) {
   print(ls.random());
 
   print(ls.lastIndex);
+
+  print(ls.count((e) => e == 'A'));
 }
