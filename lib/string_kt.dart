@@ -1,5 +1,5 @@
 part of kt_utils;
-//TODO swapcase
+
 extension StringKt on String {
   ///Merge text
   String plus(String text) => '${this}$text';
