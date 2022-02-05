@@ -48,7 +48,7 @@ extension StringKt on String {
     return base64.encode(utf8.encode(this));
   }
 
-  ///Decode base64 to readable text
+  ///Decode from base64 to readable text
   String decodeBase64() {
     return utf8.decode(base64.decode(this));
   }

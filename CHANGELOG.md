@@ -1,3 +1,7 @@
+## 2.0.0
+- Add: 
+    - `string.encodeBase64`
+    - `string.decodeBase64`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`
