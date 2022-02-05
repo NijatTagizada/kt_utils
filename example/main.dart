@@ -24,6 +24,8 @@ void main(List<String> args) {
 
   print('10'.isdigit());
 
+  print('lorem ipsum'.isLowerCase());
+
   // Double
   print(5.432.roundPrecision(1));
 

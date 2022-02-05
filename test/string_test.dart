@@ -116,16 +116,24 @@ void main() {
   });
 
   group('[isdigit]', () {
-    test('should return true when given text contain positive number', () {
+    test('should return true when given text contains positive number', () {
       expect('10'.isdigit(), true);
     });
 
-    test('should return true when given text contain negative number', () {
-      
+    test('should return true when given text contains negative number', () {});
+
+    test('should return false when given text not contains only number', () {
+      expect('10a'.isdigit(), false);
+    });
+  });
+
+  group('[isLowerCase]', () {
+    test('should return true when all letters is lower case', () {
+      expect(word.isLowerCase(), true);
     });
 
-    test('should return false when given text not contain only number', () {
-      expect('10a'.isdigit(), false);
+    test('should return false when all letters is not lower case', () {
+      expect('Lorem ipsUm'.isLowerCase(), false);
     });
   });
 }
