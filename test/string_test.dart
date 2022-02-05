@@ -32,6 +32,7 @@ void main() {
       String num = '10.22';
       expect(num.toDouble(), 10.22);
     });
+    
     test('throw [FormatException] when can not convert to double', () {
       String num = '10.22a';
       expect(() => num.toDouble(), throwsA(TypeMatcher<FormatException>()));
