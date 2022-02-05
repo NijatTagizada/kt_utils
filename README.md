@@ -38,6 +38,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `isdigit` - Check text contain only digit
 
+`isLowerCase` - Check all letter is lower case
+
 <br />
 
 ## Double Methods

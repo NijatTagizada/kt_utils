@@ -57,4 +57,9 @@ extension StringKt on String {
   bool isdigit() {
     return RegExp(kOnlyDigitPtrn).hasMatch(this);
   }
+
+  ///Check all letter is lower case
+  bool isLowerCase() {
+    return this == this.toLowerCase();
+  }
 }
