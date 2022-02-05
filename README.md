@@ -32,6 +32,10 @@ import 'package:kt_utils/kt_utils.dart';
 
 `isEmailValid` - Check email is valid
 
+`encodeBase64` - Encode text to Base64
+
+`decodeBase64` - Decode from base64 to readable text
+
 <br />
 
 ## Double Methods

@@ -42,4 +42,14 @@ extension StringKt on String {
   bool isEmailValid() {
     return RegExp(kEmailPtrn).hasMatch(this);
   }
+
+  ///Encode text to Base64
+  String encodeBase64() {
+    return base64.encode(utf8.encode(this));
+  }
+
+  ///Decode from base64 to readable text
+  String decodeBase64() {
+    return utf8.decode(base64.decode(this));
+  }
 }

@@ -4,15 +4,14 @@ library kt_utils;
 //TODO isalpha()
 //TODO islowercase
 //TODO isuppercase
-//TODO String encoded =
-//TODO base64.encode(utf8.encode("example"));
-//TODO String decoded = utf8.decode(base64.decode(encoded));
 //TODO isdigit()
 //TODO change test name
 
 import 'dart:math';
 
 import 'package:kt_utils/const/regex_pattern.dart';
+
+import 'dart:convert';
 
 part 'string_kt.dart';
 
