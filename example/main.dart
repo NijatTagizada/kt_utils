@@ -26,6 +26,8 @@ void main(List<String> args) {
 
   print('lorem ipsum'.isLowerCase());
 
+  print('LOREM IPSUM'.isUpperCase());
+
   // Double
   print(5.432.roundPrecision(1));
 
