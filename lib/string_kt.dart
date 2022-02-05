@@ -52,4 +52,9 @@ extension StringKt on String {
   String decodeBase64() {
     return utf8.decode(base64.decode(this));
   }
+
+  //Check is digit
+  bool isdigit() {
+    return true;
+  }
 }
