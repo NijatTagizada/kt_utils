@@ -18,8 +18,16 @@ void main(List<String> args) {
 
   print('abc@abc.test'.isEmailValid());
 
+  print('hello world'.encodeBase64());
+
+  print('aGVsbG8gd29ybGQ='.decodeBase64());
+
+  print('10'.isdigit());
+
   // Double
-  print(5.457.roundPrecision(1));
+  print(5.432.roundPrecision(1));
+
+  print(7.6.roundPrecision(0));
 
   // List
   List<String> ls = ['A', 'B', 'C', 'D', 'A', 'D', 'A'];
