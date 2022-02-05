@@ -22,6 +22,8 @@ void main(List<String> args) {
 
   print('aGVsbG8gd29ybGQ='.decodeBase64());
 
+  print('10'.isdigit());
+
   // Double
   print(5.432.roundPrecision(1));
 

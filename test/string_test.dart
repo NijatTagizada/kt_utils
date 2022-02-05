@@ -114,4 +114,18 @@ void main() {
       expect('bG9yZW0gaXBzdW0='.decodeBase64(), word);
     });
   });
+
+  group('[isdigit]', () {
+    test('should return true when given text contain positive number', () {
+      expect('10'.isdigit(), true);
+    });
+
+    test('should return true when given text contain negative number', () {
+      
+    });
+
+    test('should return false when given text not contain only number', () {
+      expect('10a'.isdigit(), false);
+    });
+  });
 }

@@ -2,6 +2,7 @@
 - Add: 
     - `string.encodeBase64`
     - `string.decodeBase64`
+    - `string.isdigit`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`

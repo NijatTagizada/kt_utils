@@ -35,7 +35,7 @@ extension StringKt on String {
 
   ///Check contain digit
   bool containsDigit() {
-    return RegExp(kHaveDigitPtrn).hasMatch(this);
+    return RegExp(kContainDigitPtrn).hasMatch(this);
   }
 
   ///Check email is valid
@@ -51,5 +51,10 @@ extension StringKt on String {
   ///Decode from base64 to readable text
   String decodeBase64() {
     return utf8.decode(base64.decode(this));
+  }
+
+  ///Check text contain only digit
+  bool isdigit() {
+    return RegExp(kOnlyDigitPtrn).hasMatch(this);
   }
 }
