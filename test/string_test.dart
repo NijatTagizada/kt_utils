@@ -8,100 +8,96 @@ void main() {
     word = 'lorem ipsum';
   });
 
-  group('plus', () {
-    test('Plus', () {
+  group('[plus]', () {
+    test('should combine strings', () {
       expect(word.plus(' dolor'), 'lorem ipsum dolor');
     });
-    test('Plus empty string', () {
+    test('should combine strings (with empty string)', () {
       expect(''.plus('lorem'), 'lorem');
     });
   });
 
-  group('toCapitalize', () {
-    test('toCapitalize', () {
+  group('[toCapitalize]', () {
+    test('should capitalize string', () {
       expect(word.toCapitalize(), 'Lorem ipsum');
     });
 
-    test('toCapitalize empty string', () {
+    test('should return empty when capitalize empty string', () {
       expect(''.toCapitalize(), '');
     });
   });
 
-  group('toDouble', () {
-    test('To Double', () {
+  group('[toDouble]', () {
+    test('should convert string to double', () {
       String num = '10.22';
       expect(num.toDouble(), 10.22);
     });
-    test('To Double error', () {
+    test('throw [FormatException] when can not convert to double', () {
       String num = '10.22a';
       expect(() => num.toDouble(), throwsA(TypeMatcher<FormatException>()));
     });
   });
 
-  group('toInt', () {
-    test('To Int', () {
+  group('[toInt]', () {
+    test('should convert string to int', () {
       String num = '11';
       expect(num.toInt(), 11);
     });
 
-    test('To Int error', () {
+    test('throw [FormatException] when can not convert to int', () {
       String num = '11A';
       expect(() => num.toInt(), throwsA(TypeMatcher<FormatException>()));
     });
   });
 
-  group('reversed', () {
-    test('Reversed', () {
+  group('[reversed]', () {
+    test('should revers given string', () {
       expect(word.reversed(), 'muspi merol');
     });
 
-    test('Reversed empty string', () {
+    test('should return empty when reversed empty string', () {
       expect(''.reversed(), '');
     });
   });
 
-  group('toTitleCase', () {
-    test('toTitleCase', () {
+  group('[toTitleCase]', () {
+    test('should capizalize first letter of word', () {
       expect(word.toTitleCase(), 'Lorem Ipsum');
     });
 
-    test('toTitleCase empty string', () {
+    test('should return empty when call toTitleCase with empty string', () {
       expect(''.toTitleCase(), '');
     });
   });
 
-  group('containsDigit', () {
-    test('contains digit 1', () {
+  group('[containsDigit]', () {
+    test('should return true when string contains only digit', () {
       expect('11'.containsDigit(), true);
     });
 
-    test('contains digit 2', () {
+    test('should return true when string contains digit and letter', () {
       expect('11dc'.containsDigit(), true);
     });
 
-    test('contains digit 3', () {
+    test('should return false when string not contains any digit', () {
       expect('#@f!#@'.containsDigit(), false);
     });
 
-    test('contains digit empty string', () {
+    test('should return false when call containsDigit with empty string', () {
       expect(''.containsDigit(), false);
     });
   });
 
-  group('isEmailValid', () {
-    test('check email is valid 1', () {
+  group('[isEmailValid]', () {
+    test('should return true when valid email', () {
       expect('dd.@com'.isEmailValid(), false);
     });
 
-    test('check email is valid 2', () {
-      expect('test@test.com'.isEmailValid(), true);
-    });
-
-    test('check email is valid 4', () {
+    test('should return false when invalid email', () {
       expect('a@b.c'.isEmailValid(), false);
     });
 
-    test('check email is valid empty string', () {
+    test('should return false when isEmailValid with empty string', () {
       expect(''.isEmailValid(), false);
     });
   });
