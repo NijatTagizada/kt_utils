@@ -32,7 +32,7 @@ void main() {
       String num = '10.22';
       expect(num.toDouble(), 10.22);
     });
-    
+
     test('throw [FormatException] when can not convert to double', () {
       String num = '10.22a';
       expect(() => num.toDouble(), throwsA(TypeMatcher<FormatException>()));
@@ -100,6 +100,18 @@ void main() {
 
     test('should return false when isEmailValid with empty string', () {
       expect(''.isEmailValid(), false);
+    });
+  });
+
+  group('[encodeBase64]', () {
+    test('return base64 when encode successfully', () {
+      expect(word.encodeBase64(), 'bG9yZW0gaXBzdW0=');
+    });
+  });
+
+  group('[decodeBase64]', () {
+    test('return valid text when decode successfully', () {
+      expect('bG9yZW0gaXBzdW0='.decodeBase64(), word);
     });
   });
 }
