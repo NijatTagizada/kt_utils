@@ -136,4 +136,14 @@ void main() {
       expect('Lorem ipsUm'.isLowerCase(), false);
     });
   });
+
+  group('[isUpperCase]', () {
+    test('should return true when all letters is upper case', () {
+      expect('LOREM IPSUM'.isUpperCase(), true);
+    });
+
+    test('should return false when all letters is not upper case', () {
+      expect('Lorem ipsUm'.isLowerCase(), false);
+    });
+  });
 }

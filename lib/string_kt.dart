@@ -58,8 +58,13 @@ extension StringKt on String {
     return RegExp(kOnlyDigitPtrn).hasMatch(this);
   }
 
-  ///Check all letter is lower case
+  ///Check all letters is lower case
   bool isLowerCase() {
     return this == this.toLowerCase();
+  }
+
+  ///Check all letters is upper case
+  bool isUpperCase() {
+    return this == this.toUpperCase();
   }
 }

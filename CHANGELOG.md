@@ -4,6 +4,7 @@
     - `string.decodeBase64`
     - `string.isdigit`
     - `string.isLowerCase`
+    - `string.isUpperCase`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`
