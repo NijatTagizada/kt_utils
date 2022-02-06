@@ -69,7 +69,19 @@ extension StringKt on String {
   }
 
   ///Check text contains only letters
-  bool isAlpha(){
+  bool isAlpha() {
     return RegExp(kOnlyLettersPtrn).hasMatch(this);
+  }
+
+  ///Change given text case
+  ///For example lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD'
+  String swapCase() {
+    return this.split('').map((String e) {
+      if (e.toLowerCase() == e) {
+        return e.toUpperCase();
+      } else {
+        return e.toLowerCase();
+      }
+    }).join('');
   }
 }

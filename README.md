@@ -44,6 +44,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `isAlpha` - Check text contains only letters
 
+`swapCase` - Change given text case
+
 <br />
 
 ## Double Methods

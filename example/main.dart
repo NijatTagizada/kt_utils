@@ -29,7 +29,9 @@ void main(List<String> args) {
   print('LOREM IPSUM'.isUpperCase());
 
   print('ŹŻŚĄ å abcd'.isAlpha());
-  
+
+  print('LorEM IpsUM'.swapCase());
+
   // Double
   print(5.432.roundPrecision(1));
 
