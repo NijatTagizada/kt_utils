@@ -4,3 +4,5 @@ const String kEmailPtrn =
 const String kContainDigitPtrn = r'.*[0-9].*';
 
 const String kOnlyDigitPtrn = r'^-?[0-9]*$';
+
+const String kOnlyLettersPtrn = r'^[A-zÀ-ú\s]';

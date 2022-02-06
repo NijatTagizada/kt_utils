@@ -53,8 +53,8 @@ extension StringKt on String {
     return utf8.decode(base64.decode(this));
   }
 
-  ///Check text contain only digit
-  bool isdigit() {
+  ///Check text contains only digit
+  bool isDigit() {
     return RegExp(kOnlyDigitPtrn).hasMatch(this);
   }
 
@@ -66,5 +66,10 @@ extension StringKt on String {
   ///Check all letters is upper case
   bool isUpperCase() {
     return this == this.toUpperCase();
+  }
+
+  ///Check text contains only letters
+  bool isAlpha(){
+    return RegExp(kOnlyLettersPtrn).hasMatch(this);
   }
 }
