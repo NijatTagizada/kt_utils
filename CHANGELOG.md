@@ -6,6 +6,7 @@
     - `string.isLowerCase`
     - `string.isUpperCase`
     - `string.isAlpha`
+    - `string.swapCase`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`

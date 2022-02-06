@@ -1,7 +1,5 @@
 library kt_utils;
 
-//TODO swapcase
-
 import 'dart:math';
 
 import 'package:kt_utils/const/regex_pattern.dart';

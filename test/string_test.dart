@@ -158,4 +158,14 @@ void main() {
       expect('10abc'.isAlpha(), false);
     });
   });
+
+  group('[swapcase]', () {
+    test('should return valid text when swap case given text', () {
+      expect('loReM iPsUm DOLOR'.swapCase(),'LOrEm IpSuM dolor');
+    });
+
+     test('should return empty text when swapcase call with empty text', () {
+      expect(''.swapCase(),'');
+    });
+  });
 }
