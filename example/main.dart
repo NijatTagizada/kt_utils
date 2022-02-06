@@ -22,12 +22,14 @@ void main(List<String> args) {
 
   print('aGVsbG8gd29ybGQ='.decodeBase64());
 
-  print('10'.isdigit());
+  print('10'.isDigit());
 
   print('lorem ipsum'.isLowerCase());
 
   print('LOREM IPSUM'.isUpperCase());
 
+  print('ŹŻŚĄ å abcd'.isAlpha());
+  
   // Double
   print(5.432.roundPrecision(1));
 

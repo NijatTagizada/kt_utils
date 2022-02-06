@@ -36,11 +36,13 @@ import 'package:kt_utils/kt_utils.dart';
 
 `decodeBase64` - Decode from base64 to readable text
 
-`isdigit` - Check text contain only digit
+`isDigit` - Check text contains only digit
 
 `isLowerCase` - Check all letters is lower case
 
 `isUpperCase` - Check all letters is upper case
+
+`isAlpha` - Check text contains only letters
 
 <br />
 

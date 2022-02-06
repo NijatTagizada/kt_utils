@@ -2,9 +2,10 @@
 - Add: 
     - `string.encodeBase64`
     - `string.decodeBase64`
-    - `string.isdigit`
+    - `string.isDigit`
     - `string.isLowerCase`
     - `string.isUpperCase`
+    - `string.isAlpha`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`

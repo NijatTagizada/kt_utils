@@ -1,8 +1,6 @@
 library kt_utils;
 
 //TODO swapcase
-//TODO isalpha()
-//TODO change test name
 
 import 'dart:math';
 

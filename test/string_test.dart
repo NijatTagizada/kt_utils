@@ -115,15 +115,17 @@ void main() {
     });
   });
 
-  group('[isdigit]', () {
+  group('[isDigit]', () {
     test('should return true when given text contains positive number', () {
-      expect('10'.isdigit(), true);
+      expect('10'.isDigit(), true);
     });
 
-    test('should return true when given text contains negative number', () {});
+    test('should return true when given text contains negative number', () {
+      expect('-10'.isDigit(), true);
+    });
 
     test('should return false when given text not contains only number', () {
-      expect('10a'.isdigit(), false);
+      expect('10abc'.isDigit(), false);
     });
   });
 
@@ -144,6 +146,16 @@ void main() {
 
     test('should return false when all letters is not upper case', () {
       expect('Lorem ipsUm'.isLowerCase(), false);
+    });
+  });
+
+  group('[isalpha]', () {
+    test('should return true when given text contains only letters', () {
+      expect('åuœcµåböğüeikv ŹŻŚĄm'.isAlpha(), true);
+    });
+    
+    test('should return false when given text not contains only letters', () {
+      expect('10abc'.isAlpha(), false);
     });
   });
 }
