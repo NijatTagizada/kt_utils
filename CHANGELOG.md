@@ -1,3 +1,12 @@
+## 2.0.0
+- Add: 
+    - `string.encodeBase64`
+    - `string.decodeBase64`
+    - `string.isDigit`
+    - `string.isLowerCase`
+    - `string.isUpperCase`
+    - `string.isAlpha`
+    - `string.swapCase`
 ## 1.0.0
 - Add:
     - `string.toTitleCase`

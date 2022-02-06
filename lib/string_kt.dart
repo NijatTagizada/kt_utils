@@ -35,11 +35,53 @@ extension StringKt on String {
 
   ///Check contain digit
   bool containsDigit() {
-    return RegExp(kHaveDigitPtrn).hasMatch(this);
+    return RegExp(kContainDigitPtrn).hasMatch(this);
   }
 
   ///Check email is valid
   bool isEmailValid() {
     return RegExp(kEmailPtrn).hasMatch(this);
+  }
+
+  ///Encode text to Base64
+  String encodeBase64() {
+    return base64.encode(utf8.encode(this));
+  }
+
+  ///Decode from base64 to readable text
+  String decodeBase64() {
+    return utf8.decode(base64.decode(this));
+  }
+
+  ///Check text contains only digit
+  bool isDigit() {
+    return RegExp(kOnlyDigitPtrn).hasMatch(this);
+  }
+
+  ///Check all letters is lower case
+  bool isLowerCase() {
+    return this == this.toLowerCase();
+  }
+
+  ///Check all letters is upper case
+  bool isUpperCase() {
+    return this == this.toUpperCase();
+  }
+
+  ///Check text contains only letters
+  bool isAlpha() {
+    return RegExp(kOnlyLettersPtrn).hasMatch(this);
+  }
+
+  ///Change given text case
+  ///For example change lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD'
+  String swapCase() {
+    return this.split('').map((String e) {
+      if (e.toLowerCase() == e) {
+        return e.toUpperCase();
+      } else {
+        return e.toLowerCase();
+      }
+    }).join('');
   }
 }
