@@ -74,7 +74,7 @@ extension StringKt on String {
   }
 
   ///Change given text case
-  ///For example lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD'
+  ///For example change lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD'
   String swapCase() {
     return this.split('').map((String e) {
       if (e.toLowerCase() == e) {
