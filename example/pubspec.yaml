@@ -8,3 +8,6 @@ environment:
 dependencies:
   kt_utils:
     path: ../
+  rational: ^2.2.2
+  jiffy: ^6.2.1
+
