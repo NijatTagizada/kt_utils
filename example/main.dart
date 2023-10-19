@@ -92,5 +92,3 @@ Decimal setScale(
   final s = roundMethod(decimal * scaleVal) / scaleVal;
   return s.toDecimal();
 }
-
-//TODO string last char
