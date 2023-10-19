@@ -47,6 +47,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `swapCase` - Change given text case
 
+`last` - Get last character
+
 <br />
 
 ## Double Methods
