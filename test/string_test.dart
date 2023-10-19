@@ -153,7 +153,7 @@ void main() {
     test('should return true when given text contains only letters', () {
       expect('åuœcµåböğüeikv ŹŻŚĄm'.isAlpha(), true);
     });
-    
+
     test('should return false when given text not contains only letters', () {
       expect('10abc'.isAlpha(), false);
     });
@@ -161,11 +161,17 @@ void main() {
 
   group('[swapcase]', () {
     test('should return valid text when swap case given text', () {
-      expect('loReM iPsUm DOLOR'.swapCase(),'LOrEm IpSuM dolor');
+      expect('loReM iPsUm DOLOR'.swapCase(), 'LOrEm IpSuM dolor');
     });
 
-     test('should return empty text when swapcase call with empty text', () {
-      expect(''.swapCase(),'');
+    test('should return empty text when swapcase call with empty text', () {
+      expect(''.swapCase(), '');
+    });
+  });
+
+  group('[last]', () {
+    test('should return last character of string', () {
+      expect('example'.last(), 'e');
     });
   });
 }

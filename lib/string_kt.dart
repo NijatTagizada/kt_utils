@@ -73,8 +73,13 @@ extension StringKt on String {
     return RegExp(kOnlyLettersPtrn).hasMatch(this);
   }
 
+  ///Get last character
+  String last() {
+    return this[this.length - 1];
+  }
+
   ///Change given text case
-  ///For example change lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD'
+  ///For example change lower case to upper and upper to lower ('HeLlo worLd' => 'hElLO WORlD')
   String swapCase() {
     return this.split('').map((String e) {
       if (e.toLowerCase() == e) {
