@@ -32,6 +32,8 @@ void main(List<String> args) {
 
   print('LorEM IpsUM'.swapCase());
 
+  print('example'.last());
+
   // Double
   print(5.432.roundPrecision(1));
 
