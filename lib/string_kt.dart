@@ -90,3 +90,6 @@ extension StringKt on String {
     }).join('');
   }
 }
+
+
+//TODO add is not null or empty
