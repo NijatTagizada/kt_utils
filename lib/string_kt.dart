@@ -89,7 +89,7 @@ extension StringKt on String? {
 
   ///Check text contains only digit
   bool isDigit() {
-    if (this == null) {
+    if (!this.isNotNullEmpty()) {
       return false;
     }
     return RegExp(kOnlyDigitPtrn).hasMatch(this!);
