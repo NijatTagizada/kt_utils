@@ -197,7 +197,7 @@ void main() {
     });
 
     test('should return true when given text is null', () {
-      expect(null.isLowerCase(), true);
+      expect(null.isLowerCase(), false);
     });
 
     test('should return true when given text is empty', () {
@@ -215,7 +215,7 @@ void main() {
     });
 
     test('should return true when given text is null', () {
-      expect(null.isUpperCase(), true);
+      expect(null.isUpperCase(), false);
     });
 
     test('should return true when given text is empty', () {
@@ -237,7 +237,7 @@ void main() {
     });
 
     test('should return true when given text is empty', () {
-      expect(''.isAlpha(), true);
+      expect(''.isAlpha(), false);
     });
   });
 

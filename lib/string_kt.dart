@@ -4,9 +4,8 @@ extension StringKt on String? {
   ///Merge text
   String? plus(String text) {
     if (this == null) {
-      return null;
+      return text;
     }
-
     return '${this}$text';
   }
 
@@ -26,7 +25,7 @@ extension StringKt on String? {
   ///Parse to [int]
   int? toInt() {
     if (this == null) {
-      return null;
+      throw FormatException();
     }
     return int.parse(this!);
   }
@@ -34,7 +33,7 @@ extension StringKt on String? {
   ///Parse to [double]
   double? toDouble() {
     if (this == null) {
-      return null;
+      throw FormatException();
     }
     return double.parse(this!);
   }
@@ -57,7 +56,7 @@ extension StringKt on String? {
 
   ///Check contain digit
   bool containsDigit() {
-    if (this == null) {
+    if (!this.isNotNullEmpty()) {
       return false;
     }
     return RegExp(kContainDigitPtrn).hasMatch(this!);
