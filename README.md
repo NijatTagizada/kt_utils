@@ -47,6 +47,10 @@ import 'package:kt_utils/kt_utils.dart';
 
 `swapCase` - Change given text case
 
+`last` - Get last character
+
+`isNotNullEmpty` - Check string is not null and empty
+
 <br />
 
 ## Double Methods

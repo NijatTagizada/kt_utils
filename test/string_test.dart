@@ -15,6 +15,10 @@ void main() {
     test('should combine strings (with empty string)', () {
       expect(''.plus('lorem'), 'lorem');
     });
+
+    test('should combine strings (with null string)', () {
+      expect(null.plus('lorem'), 'lorem');
+    });
   });
 
   group('[toCapitalize]', () {
@@ -24,6 +28,10 @@ void main() {
 
     test('should return empty when capitalize empty string', () {
       expect(''.toCapitalize(), '');
+    });
+
+    test('should return null when capitalize null string', () {
+      expect(null.toCapitalize(), null);
     });
   });
 
@@ -35,6 +43,11 @@ void main() {
 
     test('throw [FormatException] when can not convert to double', () {
       String num = '10.22a';
+      expect(() => num.toDouble(), throwsA(TypeMatcher<FormatException>()));
+    });
+
+    test('throw [FormatException] when can not convert to double', () {
+      String? num = null;
       expect(() => num.toDouble(), throwsA(TypeMatcher<FormatException>()));
     });
   });
@@ -49,6 +62,11 @@ void main() {
       String num = '11A';
       expect(() => num.toInt(), throwsA(TypeMatcher<FormatException>()));
     });
+
+    test('throw [FormatException] when can not convert to int', () {
+      String? num = null;
+      expect(() => num.toInt(), throwsA(TypeMatcher<FormatException>()));
+    });
   });
 
   group('[reversed]', () {
@@ -59,6 +77,10 @@ void main() {
     test('should return empty when reversed empty string', () {
       expect(''.reversed(), '');
     });
+
+    test('should return null when reversed null string', () {
+      expect(null.reversed(), null);
+    });
   });
 
   group('[toTitleCase]', () {
@@ -68,6 +90,10 @@ void main() {
 
     test('should return empty when call toTitleCase with empty string', () {
       expect(''.toTitleCase(), '');
+    });
+
+    test('should return null when call toTitleCase with null string', () {
+      expect(null.toTitleCase(), null);
     });
   });
 
@@ -87,6 +113,10 @@ void main() {
     test('should return false when call containsDigit with empty string', () {
       expect(''.containsDigit(), false);
     });
+
+    test('should return false when call containsDigit with null string', () {
+      expect(null.containsDigit(), false);
+    });
   });
 
   group('[isEmailValid]', () {
@@ -101,17 +131,37 @@ void main() {
     test('should return false when isEmailValid with empty string', () {
       expect(''.isEmailValid(), false);
     });
+
+    test('should return false when isEmailValid with null string', () {
+      expect(null.isEmailValid(), false);
+    });
   });
 
   group('[encodeBase64]', () {
     test('return base64 when encode successfully', () {
       expect(word.encodeBase64(), 'bG9yZW0gaXBzdW0=');
     });
+
+    test('should return null when given text is null', () {
+      expect(null.encodeBase64(), null);
+    });
+
+    test('should return empty when given text is empty', () {
+      expect(''.encodeBase64(), '');
+    });
   });
 
   group('[decodeBase64]', () {
     test('return valid text when decode successfully', () {
       expect('bG9yZW0gaXBzdW0='.decodeBase64(), word);
+    });
+
+    test('should return null when given text is null', () {
+      expect(null.decodeBase64(), null);
+    });
+
+    test('should return empty when given text is empty', () {
+      expect(''.decodeBase64(), '');
     });
   });
 
@@ -127,6 +177,14 @@ void main() {
     test('should return false when given text not contains only number', () {
       expect('10abc'.isDigit(), false);
     });
+
+    test('should return false when given text is null', () {
+      expect(null.isDigit(), false);
+    });
+
+    test('should return false when given text is empty', () {
+      expect(''.isDigit(), false);
+    });
   });
 
   group('[isLowerCase]', () {
@@ -137,6 +195,14 @@ void main() {
     test('should return false when all letters is not lower case', () {
       expect('Lorem ipsUm'.isLowerCase(), false);
     });
+
+    test('should return true when given text is null', () {
+      expect(null.isLowerCase(), false);
+    });
+
+    test('should return true when given text is empty', () {
+      expect(''.isLowerCase(), true);
+    });
   });
 
   group('[isUpperCase]', () {
@@ -145,7 +211,15 @@ void main() {
     });
 
     test('should return false when all letters is not upper case', () {
-      expect('Lorem ipsUm'.isLowerCase(), false);
+      expect('Lorem ipsUm'.isUpperCase(), false);
+    });
+
+    test('should return true when given text is null', () {
+      expect(null.isUpperCase(), false);
+    });
+
+    test('should return true when given text is empty', () {
+      expect(''.isLowerCase(), true);
     });
   });
 
@@ -153,19 +227,58 @@ void main() {
     test('should return true when given text contains only letters', () {
       expect('åuœcµåböğüeikv ŹŻŚĄm'.isAlpha(), true);
     });
-    
+
     test('should return false when given text not contains only letters', () {
       expect('10abc'.isAlpha(), false);
+    });
+
+    test('should return false when given text is null', () {
+      expect(null.isAlpha(), false);
+    });
+
+    test('should return true when given text is empty', () {
+      expect(''.isAlpha(), false);
     });
   });
 
   group('[swapcase]', () {
     test('should return valid text when swap case given text', () {
-      expect('loReM iPsUm DOLOR'.swapCase(),'LOrEm IpSuM dolor');
+      expect('loReM iPsUm DOLOR'.swapCase(), 'LOrEm IpSuM dolor');
     });
 
-     test('should return empty text when swapcase call with empty text', () {
-      expect(''.swapCase(),'');
+    test('should return empty text when swapcase call with empty text', () {
+      expect(''.swapCase(), '');
+    });
+
+    test('should return null when swapcase call with null', () {
+      expect(null.swapCase(), null);
+    });
+  });
+
+  group('[last]', () {
+    test('should return last character of string', () {
+      expect('example'.last(), 'e');
+    });
+
+    test('should return empty string', () {
+      expect(''.last(), '');
+    });
+    test('should return null string', () {
+      expect(null.last(), null);
+    });
+  });
+
+  group('[isNotNullEmpty]', () {
+    test('should return true when string is not null and also empty', () {
+      expect('example'.isNotNullEmpty(), true);
+    });
+
+    test('should return false when string is empty', () {
+      expect(''.isNotNullEmpty(), false);
+    });
+
+    test('should return false when string is null', () {
+      expect(null.isNotNullEmpty(), false);
     });
   });
 }

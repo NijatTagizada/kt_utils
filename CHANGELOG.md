@@ -1,3 +1,9 @@
+## 2.1.0
+ - Add: 
+    - `string.isNotNullEmpty`
+ - Changes:
+    - Make String nullable
+
 ## 2.0.1
 - Update `README.md`
 
