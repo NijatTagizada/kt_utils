@@ -124,6 +124,9 @@ extension StringKt on String? {
     if (this == null) {
       return null;
     }
+    if (this!.isEmpty) {
+      return '';
+    }
     return this![this!.length - 1];
   }
 
