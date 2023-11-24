@@ -146,8 +146,8 @@ extension StringKt on String? {
   ///Check text is not null and empty
   bool isNotNullEmpty() {
     if (this != null && this!.isNotEmpty) {
-      return false;
+      return true;
     }
-    return true;
+    return false;
   }
 }

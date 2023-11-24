@@ -174,4 +174,18 @@ void main() {
       expect('example'.last(), 'e');
     });
   });
+
+  group('[isNotNullEmpty]', () {
+    test('should return true when string is not null and also empty', () {
+      expect('example'.isNotNullEmpty(), true);
+    });
+
+    test('should return false when string is null', () {
+      expect(''.isNotNullEmpty(), false);
+    });
+
+    test('should return false when string is empty', () {
+      expect(null.isNotNullEmpty(), false);
+    });
+  });
 }
