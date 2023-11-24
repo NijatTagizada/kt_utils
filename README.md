@@ -49,6 +49,8 @@ import 'package:kt_utils/kt_utils.dart';
 
 `last` - Get last character
 
+`isNotNullEmpty` - Check string is not null and empty
+
 <br />
 
 ## Double Methods
