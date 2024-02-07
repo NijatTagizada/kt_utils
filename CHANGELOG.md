@@ -1,3 +1,7 @@
+## 2.2.0
+ - Changes:
+    - **DEPRECATED**: `double.roundPrecision` is deprecated. Use `double.roundDouble` instead of it
+
 ## 2.1.0
  - Add: 
     - `string.isNotNullEmpty`
