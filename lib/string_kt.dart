@@ -1,6 +1,8 @@
 part of kt_utils;
 
 extension StringKt on String? {
+  //TODO  errors.joined(separator: "\n")))) add to plus method like swift
+
   ///Merge text
   String? plus(String text) {
     if (this == null) {
