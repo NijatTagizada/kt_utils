@@ -31,7 +31,7 @@ void main() {
     expect(2.355.roundDouble(2), 2.36);
   });
 
-  test('RoundPrecision when precision is 2(4)', () {
-    expect((2.34 + 2.45).roundDouble(5), 4.79);
+  test('RoundPrecision when precision is 5', () {
+    expect((2.34 + 2.458).roundDouble(5), 4.798);
   });
 }
