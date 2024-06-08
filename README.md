@@ -49,10 +49,14 @@ import 'package:kt_utils/kt_utils.dart';
 
 `last` - Get last character
 
+`isNotNullEmpty` - Check string is not null and empty
+
 <br />
 
 ## Double Methods
-`roundPrecision` - Rounding number to decimal places
+<strike>`roundPrecision`</strike> - Rounding number to decimal places (Deprecated)
+
+`roundDouble` - Rounding number to decimal places
 
 
 <br />

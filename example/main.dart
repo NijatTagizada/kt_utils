@@ -1,9 +1,6 @@
-import 'package:jiffy/jiffy.dart';
 import 'package:kt_utils/kt_utils.dart';
 
 import 'dart:math';
-
-import 'package:intl/intl.dart';
 
 import 'decimal.dart';
 
@@ -42,9 +39,9 @@ void main(List<String> args) {
   print('example'.last());
 
   // Double
-  print(5.432.roundPrecision(1));
+  print(5.432.roundDouble(1));
 
-  print(7.6.roundPrecision(0));
+  print(7.6.roundDouble(0));
 
   // List
   List<String> ls = ['A', 'B', 'C', 'D', 'A', 'D', 'A'];
@@ -66,17 +63,6 @@ void main(List<String> args) {
 
   var d = Decimal.parse('11') / Decimal.parse('3600');
   print(d.toDouble());
-
-  var ji = Jiffy.parse('2023-07-19 05:45:52.959655').diff(
-      Jiffy.parse('2023-07-19 05:45:00.595804'),
-      unit: Unit.second,
-      asFloat: true);
-
-  var time1 = DateTime.parse('2023-07-19 05:45:06.595804');
-  var time2 = DateTime.parse('2023-07-19 05:45:52.959655');
-
-  print((time2.microsecondsSinceEpoch - time1.microsecondsSinceEpoch) /
-      Duration.microsecondsPerSecond);
 }
 
 Decimal setScaleRoundDown(Decimal decimal, int scale) =>
