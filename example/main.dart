@@ -60,9 +60,7 @@ void main(List<String> args) {
   print(setScaleRoundUp(Decimal.parse('12.345'), 1));
   print(setScaleRoundUp(Decimal.parse('12.345'), 2));
   print(setScaleRoundUp(Decimal.parse('9876.54210'), 4));
-
-  var d = Decimal.parse('11') / Decimal.parse('3600');
-  print(d.toDouble());
+  print(setScaleRoundDown(Decimal.parse('11.584'), 2));
 }
 
 Decimal setScaleRoundDown(Decimal decimal, int scale) =>
