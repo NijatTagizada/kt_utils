@@ -1,4 +1,4 @@
-part of kt_utils;
+import 'dart:math';
 
 extension ListKt<T> on Iterable<T> {
   ///forEach with index

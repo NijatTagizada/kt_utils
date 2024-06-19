@@ -35,9 +35,9 @@ void main(List<String> args) {
   print('example'.last());
 
   // Double
-  print(5.432.roundPrecision(1));
+  print(5.432.roundDouble(1));
 
-  print(7.6.roundPrecision(0));
+  print(7.6.roundDouble(0));
 
   // List
   List<String> ls = ['A', 'B', 'C', 'D', 'A', 'D', 'A'];

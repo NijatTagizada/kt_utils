@@ -280,5 +280,9 @@ void main() {
     test('should return false when string is null', () {
       expect(null.isNotNullEmpty(), false);
     });
+
+    test('should return false when string is gap', () {
+      expect('            '.isNotNullEmpty(), false);
+    });
   });
 }
