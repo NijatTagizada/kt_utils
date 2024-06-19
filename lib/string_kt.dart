@@ -149,7 +149,7 @@ extension StringKt on String? {
 
   ///Check text is not null and empty
   bool isNotNullEmpty() {
-    if (this != null && this!.isNotEmpty) {
+    if (this != null && this!.trim().isNotEmpty) {
       return true;
     }
     return false;
