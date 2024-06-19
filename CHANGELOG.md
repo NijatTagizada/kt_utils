@@ -1,3 +1,7 @@
+## Unreleased build
+ - Changes:
+    - use trim method inside `isNotNullEmpty`
+
 ## 2.2.0
  - Changes:
     - **DEPRECATED**: `double.roundPrecision` is deprecated. Use `double.roundDouble` instead of it
