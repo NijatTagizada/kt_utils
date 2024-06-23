@@ -1,6 +1,6 @@
 name: kt_utils
 description: Useful extension methods such as forEachIndexed, roundPrecision etc.
-version: 2.2.0
+version: 2.2.1
 homepage: https://github.com/NijatTagizada/kt_utils
 topics:
   - utils

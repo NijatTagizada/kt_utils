@@ -1,6 +1,7 @@
-## Unreleased build
+## 2.2.1
  - Changes:
-    - use trim method inside `isNotNullEmpty`
+    - Use trim method inside in `isNotNullEmpty`
+    - Update exported files
 
 ## 2.2.0
  - Changes:
