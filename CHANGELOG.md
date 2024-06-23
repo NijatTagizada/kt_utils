@@ -1,3 +1,9 @@
+## 2.2.1
+ - Changes:
+    - Use trim method inside in `isNotNullEmpty`
+    - Update exported files
+    - **BREAKING**: SDK version updated to >=2.17.0 <4.0.0"
+
 ## 2.2.0
  - Changes:
     - **DEPRECATED**: `double.roundPrecision` is deprecated. Use `double.roundDouble` instead of it

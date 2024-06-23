@@ -1,4 +1,6 @@
-part of kt_utils;
+import 'dart:convert';
+
+import 'const/regex_pattern.dart';
 
 extension StringKt on String? {
   ///Merge text
@@ -59,7 +61,7 @@ extension StringKt on String? {
     if (!this.isNotNullEmpty()) {
       return false;
     }
-    return RegExp(kContainDigitPtrn).hasMatch(this!);
+    return RegExp(ConstVariable.kContainDigitPtrn).hasMatch(this!);
   }
 
   ///Check email is valid
@@ -67,7 +69,7 @@ extension StringKt on String? {
     if (this == null) {
       return false;
     }
-    return RegExp(kEmailPtrn).hasMatch(this!);
+    return RegExp(ConstVariable.kEmailPtrn).hasMatch(this!);
   }
 
   ///Encode text to Base64
@@ -91,7 +93,7 @@ extension StringKt on String? {
     if (!this.isNotNullEmpty()) {
       return false;
     }
-    return RegExp(kOnlyDigitPtrn).hasMatch(this!);
+    return RegExp(ConstVariable.kOnlyDigitPtrn).hasMatch(this!);
   }
 
   ///Check all letters is lower case
@@ -115,7 +117,7 @@ extension StringKt on String? {
     if (this == null) {
       return false;
     }
-    return RegExp(kOnlyLettersPtrn).hasMatch(this!);
+    return RegExp(ConstVariable.kOnlyLettersPtrn).hasMatch(this!);
   }
 
   ///Get last character
@@ -147,7 +149,7 @@ extension StringKt on String? {
 
   ///Check text is not null and empty
   bool isNotNullEmpty() {
-    if (this != null && this!.isNotEmpty) {
+    if (this != null && this!.trim().isNotEmpty) {
       return true;
     }
     return false;

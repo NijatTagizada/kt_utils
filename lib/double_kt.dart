@@ -1,8 +1,9 @@
-part of 'kt_utils.dart';
+import 'dart:math';
 
 extension DoubleKt on double {
   /// Rounding number to decimal places
-  @Deprecated('Please use [roundDouble] instead of it. Will be removed in 2.3.0')
+  @Deprecated(
+      'Please use [roundDouble] instead of it. Will be removed in 2.3.0')
   double roundPrecision(int precision) {
     if (precision == 0) {
       return double.parse(this.toStringAsFixed(precision));
