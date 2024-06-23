@@ -2,6 +2,7 @@
  - Changes:
     - Use trim method inside in `isNotNullEmpty`
     - Update exported files
+    - **BREAKING**: SDK version updated to >=2.17.0 <4.0.0"
 
 ## 2.2.0
  - Changes:
